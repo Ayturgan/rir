@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIR | Reality in Reality</title>
+    <meta
+      name="description"
+      content="Reality in Reality is an AI-driven digital life and economy simulator built around the Second Dawn Unreal Engine prototype."
+    />
+    <link rel="preload" href="_fonts_unpacked/Elms_Sans/ElmsSans-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="_fonts_unpacked/Comfortaa/Comfortaa-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=20260512c" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <a class="brand" href="#top" aria-label="RIR home">
+            <span class="brand-mark">RIR</span>
+            <span class="brand-copy">
+              <strong>Reality in Reality</strong>
+              <small>AI digital life simulator</small>
+            </span>
+          </a>
+
+          <nav class="site-nav" aria-label="Main navigation">
+            <a href="#demo">Demo</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#technology">Technology</a>
+            <a href="#team">Team</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-background" aria-hidden="true"></div>
+          <div class="hero-inner">
+            <div class="hero-content">
+              <p class="eyebrow">Prototype submission</p>
+              <h1>Reality in Reality</h1>
+              <p class="hero-lede">
+                The first AI-driven digital life and economy simulator: live NPCs, player-side intelligence, Unreal
+                Engine immersion, and a path toward real digital ownership.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary hero-cta" href="#demo">Watch demo</a>
+              </div>
+
+              <div class="hero-proof" aria-label="Prototype highlights">
+                <span>UE5 prototype</span>
+                <span>Live voice NPCs</span>
+                <span>DePIN architecture vision</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <canvas id="section-particles" class="section-particles" aria-hidden="true"></canvas>
+
+        <section id="demo" class="section demo-section">
+          <div class="section-kicker">
+            <span>01</span>
+            <p>Featured demo</p>
+          </div>
+
+          <div class="demo-layout">
+            <div class="section-copy">
+              <h2>Gameplay video first, pitch second.</h2>
+              <p>
+                The local gameplay build is embedded directly into the site so judges can watch the current prototype
+                immediately without leaving the landing page.
+              </p>
+            </div>
+
+            <div class="demo-player-frame">
+              <div id="demo-player" class="youtube-shell" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section conviction-section">
+          <div class="section-kicker">
+            <span>02</span>
+            <p>Why RIR</p>
+          </div>
+
+          <div class="conviction-grid">
+            <div class="section-copy">
+              <h2>A living digital society, not another empty metaverse.</h2>
+            </div>
+
+            <div class="conviction-list">
+              <article>
+                <span>Problem</span>
+                <h3>AI games are expensive to scale.</h3>
+                <p>Centralized AI inference makes every extra player and every extra NPC a growing server bill.</p>
+              </article>
+              <article>
+                <span>Moat</span>
+                <h3>Intelligence moves closer to the player.</h3>
+                <p>RIR is designed around local execution, lightweight background simulation, and Cognitive LOD.</p>
+              </article>
+              <article>
+                <span>Outcome</span>
+                <h3>NPCs become participants.</h3>
+                <p>Agents can speak, work, negotiate, build relationships, and eventually participate in a real economy.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="prototype" class="section prototype-section">
+          <div class="section-kicker">
+            <span>03</span>
+            <p>Second Dawn prototype</p>
+          </div>
+
+          <div class="prototype-hero">
+            <div class="section-copy">
+              <h2>The proof begins inside the Second Dawn cafe.</h2>
+              <p>
+                The current Unreal Engine prototype focuses on believable social presence: NPCs with voice, state,
+                personality, captions, and a setting that already feels like the first room of a larger world. The
+                current scene is anchored by Erik behind the bar and two visitor NPCs: Carla and Nathan.
+              </p>
+            </div>
+            <figure class="prototype-image">
+              <img src="Screenshot 2026-05-12 144538.png" alt="Second Dawn cafe screenshot" />
+            </figure>
+          </div>
+
+          <div class="npc-strip" aria-label="Prototype NPCs">
+            <article>
+              <span>Erik</span>
+              <p>Cafe bartender and host: anchors the scene through voice presence, routine, and believable service behavior.</p>
+            </article>
+            <article>
+              <span>Carla</span>
+              <p>Cafe visitor NPC: helps prove ambient conversation, social texture, and human presence beyond the bar.</p>
+            </article>
+            <article>
+              <span>Nathan</span>
+              <p>Seated visitor NPC: quieter dialogue, reflection, and proof that the scene supports more than quest-style interaction.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="technology" class="section technology-section">
+          <div class="section-kicker">
+            <span>04</span>
+            <p>Technology moat</p>
+          </div>
+
+          <div class="technology-grid">
+            <div class="section-copy">
+              <h2>Designed for AI population at game scale.</h2>
+            </div>
+            <div class="technology-columns">
+              <article>
+                <h3>Local AI direction</h3>
+                <p>Player-side inference reduces central infrastructure pressure and supports a scalable world model.</p>
+              </article>
+              <article>
+                <h3>Full voice presence</h3>
+                <p>Characters are built to speak and react naturally, making the prototype legible in seconds.</p>
+              </article>
+              <article>
+                <h3>Cognitive LOD</h3>
+                <p>Heavy intelligence when the player is near, lightweight continuity when agents are far away.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="team" class="section team-section">
+          <div class="section-kicker">
+            <span>05</span>
+            <p>Team</p>
+          </div>
+
+          <div class="team-header">
+            <div class="section-copy">
+              <h2>Three people building one system.</h2>
+              <p>
+                RIR is a compact family-led team with aligned ownership across product, AI systems, and Unreal Engine
+                implementation.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-member">
+              <span class="member-number">01</span>
+              <h3>CEO</h3>
+              <h4 class="member-name">Berdibek Karagulov</h4>
+              <p>Tokenomics, macro-economy, operations, fundraising narrative, and market positioning.</p>
+            </article>
+            <article class="team-member">
+              <span class="member-number">02</span>
+              <h3>System Architect</h3>
+              <h4 class="member-name">Beksultan Karagulov</h4>
+              <p>Virtual economy, AI logic, NPC behavior model, prompt systems, and product architecture.</p>
+            </article>
+            <article class="team-member">
+              <span class="member-number">03</span>
+              <h3>CTO</h3>
+              <h4 class="member-name">Aiturgan Karagulova</h4>
+              <p>Unreal Engine 5 architecture, realtime NPC integration, voice pipeline, and prototype delivery.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js?v=20260512c"></script>
+  </body>
+</html>
