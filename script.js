@@ -40,6 +40,10 @@ renderPlayer();
 
 function initSectionParticles() {
   if (!particlesCanvas || !demoSection) return;
+  if (window.innerWidth <= 760) {
+    particlesCanvas.remove();
+    return;
+  }
 
   const ctx = particlesCanvas.getContext("2d");
   if (!ctx) return;
@@ -86,7 +90,6 @@ function initSectionParticles() {
 
   function step() {
     ctx.clearRect(0, 0, viewportWidth, canvasHeight);
-    ctx.globalCompositeOperation = "screen";
 
     for (const particle of particles) {
       particle.x += particle.vx;
@@ -102,9 +105,9 @@ function initSectionParticles() {
       const a = particles[i];
 
       ctx.beginPath();
-      ctx.fillStyle = "rgba(124, 240, 255, 0.58)";
-      ctx.shadowBlur = 18;
-      ctx.shadowColor = "rgba(98, 228, 255, 0.38)";
+      ctx.fillStyle = "rgba(128, 233, 255, 0.98)";
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = "rgba(128, 233, 255, 0.35)";
       ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
       ctx.fill();
       ctx.shadowBlur = 0;
@@ -117,12 +120,12 @@ function initSectionParticles() {
 
         if (distance > linkDistance) continue;
 
-        const alpha = (1 - distance / linkDistance) * 0.22;
+        const alpha = (1 - distance / linkDistance) * 0.44;
         ctx.beginPath();
-        ctx.strokeStyle = `rgba(118, 228, 255, ${alpha})`;
+        ctx.strokeStyle = `rgba(128, 233, 255, ${alpha})`;
         ctx.lineWidth = 1.1;
         ctx.shadowBlur = 10;
-        ctx.shadowColor = `rgba(118, 228, 255, ${alpha * 0.95})`;
+        ctx.shadowColor = `rgba(128, 233, 255, ${alpha * 0.95})`;
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
         ctx.stroke();
