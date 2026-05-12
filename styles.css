@@ -186,7 +186,8 @@ main {
   z-index: 0;
   width: 100%;
   pointer-events: none;
-  opacity: 0.92;
+  opacity: 0.88;
+  mix-blend-mode: screen;
 }
 
 .section {
